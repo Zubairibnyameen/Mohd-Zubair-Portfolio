@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mohd Zubair - Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Coiny&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+    </style>
+    <script src="https://kit.fontawesome.com/6634bd0b58.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <div id="header">
+        <div class="container">
+            <nav>
+                <img src="logo2.png " class="logo" widht="300px" height="150px">
+                <ul id="sidemenu">
+                    <li><a href="#header">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#services">Services</a></li>
+                    <li><a href="#portfolio">Portfolio</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                    <i class="fa-solid fa-xmark" onclick="closemenu()"></i>
+                </ul>
+                <i class="fa-solid fa-bars" onclick="openmenu()"></i>
+            </nav>
+            <div class="header-text">
+                <p>Front-End Developer</p>
+                <h1>Hi, I'm Mohd <span>Zubair</span> <br>from UP, India</h1>
+            </div>
+
+        </div>
+    </div>
+    <!-- About section -->
+    <div id="about">
+        <div class="container">
+            <div class="row">
+                <div class="about-col-1">
+                    <img src="about-pic.jpg">
+                </div>
+                <div class="about-col-2">
+                    <h1 class="sub-title">About Me</h1>
+                    <p>Enthusiastic front-end developer with a foundation in web development and a knack for creating
+                        engaging,
+                        user-friendly interfaces. Skilled in graphic design and social media management, bringing a
+                        creative
+                        approach to digital projects. Strong communicator and eager to leverage technical and design
+                        skills in a
+                        collaborative environment.</p>
+                    <div class="tab-titles">
+                        <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+                        <p class="tab-links" onclick="opentab('experience')">Experience</p>
+                        <p class="tab-links" onclick="opentab('education')">Education</p>
+                    </div>
+                    <div class="tab-contents active-tab" id="skills">
+                        <ul>
+                            <li><span>Front-end Development</span><br></li>
+                            <li><span>HTML & CSS</span><br></li>
+                            <li><span>JavaScript</span><br></li>
+                            <li><span>C Language</span><br></li>
+                            <li><span>Python</span><br></li>
+                    </div>
+                    <div class="tab-contents" id="experience">
+                        <ul>
+                            <li><span>Prodigy Infotech(Internship)</span><br>Web Development:</li>
+                            <i>5th Oct. to 5th Nov. 2024</i>
+                            <li><span>Student Mentor | IEEE </span><br>Communication:</li>
+                            <i>3 week program</i>
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="education">
+                        <ul>
+                            <li><span>2023</span><br>Bachelor of Computer Application from TMU, Moradabad</li>
+                            <li><span>2023</span><br>Intermediate School from OPS International School, Gajraula</li>
+                            <li><span>2021</span><br>High School from OPS International School, Gajraula</li>
+                        </ul>
+                    </div>
+
+
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Services -->
+
+    <div id="services">
+        <div class="container">
+            <h1 class="sub-title">My Services</h1>
+            <div class="services-list">
+                <div>
+                    <i class="fa-solid fa-code"></i>
+                    <h2>Front-End Development</h2>
+                    <p>Building interactive and responsive user interfaces using HTML, CSS, and JavaScript to enhance
+                        user experience.</p>
+                    <a href="#">Learn more</a>
+                </div>
+
+                <div>
+                    <i class="fa-brands fa-app-store"></i>
+                    <h2>Web Development</h2>
+                    <p>Developing dynamic and secure websites with full-stack technologies, including back-end and
+                        database integration.</p>
+                    <a href="#">Learn more</a>
+                </div>
+
+                <div>
+                    <i class="fa-solid fa-pen-ruler"></i>
+                    <h2>Graphic Designing</h2>
+                    <p>Creating visually compelling graphics using design software to communicate ideas and captivate
+                        audiences.</p>
+                    <a href="#">Learn more</a>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+    <!-- Portfolio -->
+    <div id="portfolio">
+        <div class="container">
+            <h1 class="sub-title"> My Work</h1>
+            <div class="work-list">
+                <div class="work">
+                    <img src="stopwatchImg.jpg">
+                    <div class="layer">
+                        <h3>Stopwatch Web Application</h3>
+                        <p>A simple and efficient stopwatch app with start, stop, and reset functions, built using HTML,
+                            CSS, and JavaScript for accurate time tracking.</p>
+                        <a href="https://zubairibnyameen.github.io/Stopwatch-Web-Application/"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                    </div>
+                </div>
+
+                <div class="work">
+                    <img src="weather-appImg.jpg">
+                    <div class="layer">
+                        <h3>Weather App</h3>
+                        <p>An intuitive weather application that displays real-time weather updates, including
+                            temperature and humidity, by fetching data from a weather API.</p>
+                        <a href="https://zubairibnyameen.github.io/Weather-App/"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                    </div>
+                </div>
+
+                <div class="work">
+                    <img src="tic-tac-toeImg.png">
+                    <div class="layer">
+                        <h3>Tic-Tac-Toe Web Application</h3>
+                        <p>A classic Tic-Tac-Toe game developed with JavaScript, providing an interactive, two-player
+                            experience with a clean and user-friendly interface.</p>
+                        <a href="https://zubairibnyameen.github.io/Tic-Tac-Toe-Web-Application/"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                    </div>
+                </div>
+
+            </div>
+
+            <a href="https://github.com/Zubairibnyameen" class="btn">See More</a>
+        </div>
+    </div>
+
+    <!-- ---Contact--- -->
+    <div id="contact">
+        <div class="container">
+            <div class="row">
+                <div class="contact-left">
+                    <h1 class="sub-title">Contact Me</h1>
+                    <p><i class="fa-solid fa-paper-plane"></i> mozubairchoudhary@gmail.com</p>
+                    <p><i class="fa-solid fa-phone"></i> 919149097947</p>
+                    <div class="social-icons">
+                        <a href="https://www.linkedin.com/in/mohd-zubair-a83353234?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app"><i class="fa-brands fa-linkedin"></i></a>
+                        <a href="https://github.com/Zubairibnyameen"><i class="fa-brands fa-github"></i></a>
+                        <a href="https://www.instagram.com/zubairibnyameen/"><i class="fa-brands fa-instagram"></i></a>
+                        <a href="https://www.facebook.com/share/toNPxx3U2CB3YFUK/?mibextid=qi2Omg"><i class="fa-brands fa-facebook"></i></a>
+                    </div>
+                    <a href="Mohd Zubair - Resume.pdf" download class="btn btn2">Download Resume</a>
+                </div>
+                <div class="contact-right">
+                    <form name="submit-to-google-sheet">
+                        <input type="text" name="Name" placeholder="Your Name" required>
+                        <input type="email" name="Email" placeholder="Your Email" required>
+                        <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
+                        <button type="submit" class="btn btn2">Submit</button>
+                    </form>
+                    <span id="msg"></span>
+                </div>
+            </div>
+        </div>
+        <div class="copyright">
+            <p>Copyright © Mohd Zubair with <i class="fa-solid fa-heart"></i></p>
+        </div>
+    </div>
+    
+<script src="script.js"></script>
+</body>
+
+</html>
